@@ -10,7 +10,7 @@ weight: 1
 ## Microsoft R&D India
 
 **Software Engineer II**
-*Aug 2021 – 
+
 
 ### What I worked on
 
@@ -49,7 +49,7 @@ C#, Azure (Service Bus, Functions, Cosmos DB, Redis), Kusto, PowerApps, CI/CD, E
 ## Amazon
 
 **Software Development Engineer**
-*Sep 2017 – Jul 2021*
+
 
 ### What I worked on
 
