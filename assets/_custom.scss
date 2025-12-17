@@ -1,0 +1,132 @@
+/* Custom Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  /* Extra Bold */
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+/* Sidebar Logo Styling */
+.book-brand img {
+  border-radius: 50%;
+  /* Rounded */
+  width: 3rem;
+  /* Small icon size */
+  height: 3rem;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.book-brand span {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Make links bolder or distinct if needed, but keeping it simple for now */
+a {
+  text-decoration-thickness: 1px;
+}
+
+/* Collapsible details styling */
+details {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+}
+
+summary {
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  /* Hide default triangle in some browsers */
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "▶";
+  font-size: 0.8em;
+  margin-right: 0.5em;
+  transition: transform 0.2s;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details[open] summary {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+/* Make diagrams responsive */
+.diagram-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section (Home Page Profile) */
+.hero-section {
+  display: flex;
+  gap: 2rem;
+  /* Space between image and text */
+  align-items: center;
+  /* Vertically center the text with the image */
+  margin-bottom: 3rem;
+  /* Space before the next section starts */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.hero-bio {
+  font-size: 1.15rem;
+  /* Slightly larger than body text for hierarchy */
+  line-height: 1.6;
+  /* distinct spacing for readability */
+  color: #333;
+  /* Dark grey, not pure black, for less eye strain */
+  max-width: 700px;
+  /* Prevents lines from getting too long to read */
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  /* Prevents image from squishing on smaller screens */
+  border: 2px solid #eaeaea;
+  /* Subtle border for polish */
+}

@@ -1,0 +1,26 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Aravind Sundaresan'
+theme = 'hugo-book'
+
+[params]
+  BookLogo = '/aravind.jpg'
+  BookMenuBundle = '/menu'
+  BookSection = '*'
+  BookSearch = true
+
+[menu]
+  [[menu.after]]
+    name = "Writing"
+    url = "https://substack.com/@aravindsundaresan"
+    weight = 10
+
+  [[menu.after]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
