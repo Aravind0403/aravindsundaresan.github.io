@@ -10,7 +10,7 @@ weight: 1
 ## Microsoft R&D India
 
 **Software Engineer II**
-*Aug 2021 – Nov 2023*
+*Aug 2021 – 
 
 ### What I worked on
 
