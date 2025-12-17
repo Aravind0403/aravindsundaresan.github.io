@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.128.0"  # Or match your local version
+  HUGO_VERSION = "0.146.0"  # Or match your local version
   HUGO_ENV = "production"
   # This flag is critical for many themes to handle SCSS/images
   HUGO_EXTENDED = "true"
